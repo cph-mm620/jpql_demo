@@ -13,5 +13,5 @@ public interface IFacade {
     List<Employee> getAllBelowAverage();
     Department getWithMostEmployees();
     Department getMostExpensiveSalarySum();
-
+    List<Department> getDepartmentsWithEmpNamed(String name);
 }
