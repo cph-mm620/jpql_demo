@@ -18,7 +18,7 @@
 <!--            <property name="eclipselink.logging.parameters" value="true"/>-->
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpql_demo?serverTimezone=UTC"/>
             <property name="javax.persistence.jdbc.user" value="dev"/>
-            <property name="javax.persistence.jdbc.password" value="ax2"/>
+            <property name="javax.persistence.jdbc.password" value="Bozzy2015"/>
         </properties>
     </persistence-unit>
 </persistence>

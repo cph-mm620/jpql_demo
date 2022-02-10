@@ -1,6 +1,7 @@
 package entities;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 public class Employee {
@@ -34,6 +35,19 @@ public class Employee {
     public Employee(String name, int salery) {
         this.name = name;
         this.salery = salery;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return Double.compare(employee.salery, salery) == 0 && name.equals(employee.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, salery);
     }
 
     public String getName() {
